@@ -1,0 +1,2 @@
+ttkbootstrap
+mysql-conncetor-python

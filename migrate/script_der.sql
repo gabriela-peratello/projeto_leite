@@ -1,15 +1,15 @@
-CREATE DATABASE registros_leite;
+CREATE DATABASE if NOT EXISTS registros_leite;
 
 USE registros_leite;
 
 
 CREATE TABLE turma (
- sala CHAR(10) NOT NULL PRIMARY KEY,
+ sala VARCHAR(25) NOT NULL PRIMARY KEY,
  representante VARCHAR(50)
 );
 
 CREATE TABLE inventario (
- id_entrega CHAR(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ id_entrega INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  quantidade_caixas INT,
  dt_entrega DATE,
  sala CHAR(10)
